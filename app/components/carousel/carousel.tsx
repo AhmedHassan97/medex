@@ -23,16 +23,6 @@ export default function CustomCarousel() {
         autoPlay
         emulateTouch
         showArrows
-        renderArrowNext={(handler, hasNext) =>
-          hasNext && (
-            <Button
-              onClick={handler}
-              className="absolute right-0 -bottom-10 z-auto"
-            >
-              <ArrowRightIcon />
-            </Button>
-          )
-        }
         renderIndicator={() => <></>}
         renderThumbs={(children) => {
           return children.map((child, index) => (
